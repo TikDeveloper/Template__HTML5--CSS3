@@ -1,0 +1,204 @@
+*{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    border:none;
+    outline: none;
+    color:white;
+    line-height: 1.5;
+
+}
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: Merriweather;
+    src: url('../fonts/Merriweather-Regular.ttf');
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.content {
+    flex: 1 0 auto;
+}
+/***********************  Loader  ****************************/
+.loader__main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 999;
+    opacity: 0.5;
+    transition: 1s all ease;
+}
+.loader{
+    width: 150px;
+    height: 100px;
+    background: url('../images/loader.png') no-repeat;
+    background-size: cover;
+}
+.loader__hide{
+    opacity: 0;
+    visibility: hidden;
+}
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');*/
+
+.h3__subTitle{
+    color:#0f5f5c;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+.p__descText{
+    color: #83a7a5;
+    margin-top: 15px;
+}
+.shp{
+    fill: #6faf47;
+}
+.shp0{
+    fill: #f2f2f2;
+}
+.shp1{
+    fill: #83a7a5;
+}
+.shpWhite{
+    fill: #ffffff;
+}
+#svg__shape2{
+    position: absolute;
+    left: 50%;
+    top: 520px;
+}
+#svg__shape3{
+    position: absolute;
+    left: 46%;
+    top: 610px;
+
+}
+
+
+
+
+/***********************  Section-Footer  ****************************/
+.section__footer{
+    margin-top: auto;
+}
+.section__footer .section__child{
+    min-height: auto;
+    margin-top:95px;
+}
+.footer__top{
+    display: flex;
+    justify-content: space-between;
+}
+.section__footerItem:first-child{
+    width: 200px;
+}
+.section__footerItem:last-child{
+    width: 250px;
+}
+.section__footerItem > ul > li{
+    position: relative;
+}
+.section__footerItem .h3__subTitle{
+    height: 40px;
+    margin-top: 0;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.f_title:first-child{
+    font-size: 22px;
+    font-weight: bolder;
+}
+.section__footerItem .p__descText{
+    margin:10px 0;
+    font-size: 13px;
+}
+.section__footerItem > ul > li > a{
+    display: block;
+}
+.section__footerItem > ul > li > a:hover{
+    text-decoration: underline;
+    color: #83a7a5;
+}
+.inp__email{
+    margin-top: 10px;
+    background-color: #edf1eb;
+    font-size: 13px;
+    color: gray;
+    padding: 10px 15px;
+    padding-right: 40px;
+    border-radius: 5px;
+    width: 200px;
+}
+.inp__email:active,.inp__email:focus{
+    outline: 2px solid gray;
+}
+.sd{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+
+.footer__bottom{
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__bottom .p__descText{
+    margin-top: 0;
+    font-size: 12px;
+}
+.footer__bottomRight{
+    display: flex;
+    align-items: center;
+}
+.footer__socialItem{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+.tw{
+    background-color: #55abed;
+}
+.fb{
+    background-color: #3b5998;
+}
+.ins{
+    background-color: #3f729b;
+}
+.dr{
+    background-color: #ea4c89;
+}
+.git{
+    background-color: #333333;
+}

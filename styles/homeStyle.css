@@ -1,0 +1,667 @@
+@import "global.css";
+
+
+/***********************  Burger  ****************************/
+.mobileMenu{
+    display: none;
+}
+.header__navMobile{
+    visibility: hidden;
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    right: 0;
+    background-color: black;
+    text-align: center;
+    background: url('../images/Rectangle 1.png') no-repeat;
+    z-index: 900;
+    background-size: cover;
+    transition: 1s all ease;
+    overflow: hidden;
+}
+.header__navMobileActive{
+    visibility: visible;
+    height: 250px;
+}
+.burger {
+    display: inline-block;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+/***********************  Section Global  ****************************/
+.section__global{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.section__childTitle{
+    margin-bottom: 70px;
+}
+.section__childTitle > h2{
+    color: #0f5f5c;
+    font-size: 32px;
+}
+.section__childTitle > p{
+    font-size: 15px;
+}
+
+
+
+/***********************  Section-Top  ****************************/
+.section__top{
+    background: url('../images/Layer 14.png') no-repeat;
+    background-size: cover;
+    z-index: 1;
+
+}
+.section__child{
+    width: 1055px;
+    min-height: 660px;
+    z-index: 4;
+    position: relative;
+}
+
+.section__top:before, .section__top:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.section__top:before{
+    background: url('../images/Rectangle 1.png') no-repeat;
+    z-index: 2;
+    background-size: cover;
+}
+.section__top:after{
+    background: url('../images/Layer 4.png') no-repeat;
+    z-index: 3;
+    background-size: cover;
+}
+/*.header__greenLayer,.header__topBlackLayer{*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+
+/*}*/
+/*.header__greenLayer{*/
+/*    background: url('../images/Rectangle 1.png') no-repeat;*/
+/*    background-size: cover;*/
+/*    z-index: 2;*/
+/*}*/
+/*.header__topBlackLayer{*/
+/*    background: url('../images/Layer 4.png') no-repeat;*/
+/*    background-size: cover;*/
+/*    background-position-y: -180px;*/
+/*    z-index: 3;*/
+/*}*/
+.section__topChildCenter{
+    width: 515px;
+    position: absolute;
+    top: 295px;
+    left: -80%;
+    transition: 0.7s all ease;
+    opacity: 0;
+
+}
+.fadeSectionTop{
+    left: 0%;
+    opacity: 1;
+}
+.section__topChildCenter > h1{
+    font-size: 38px;
+}
+.section__topChildCenter > p{
+    margin: 20px 0;
+    font-size: 16px;
+    color:white;
+}
+.section__topChildCenter > button{
+    padding: 15px 45px;
+    background-color:#6fb048;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+.section__topChildCenter > button:after{
+    content: '';
+    position: absolute;
+    top: 0;;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #bec8c8;
+    border-radius: 5px;
+    z-index: -1;
+    transition:0.5s all ease;
+
+}
+.section__topChildCenter > button:hover:after{
+    width: 100%;
+}
+
+/***********************  Header Styles  ****************************/
+
+
+header{
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+}
+header > div{
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.header__textStyle{
+    color:#bec8c8;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+.header__logo{
+    display: flex;
+    align-items: center;
+}
+.header__logoName > a {
+    font-size: 29px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.header__logoPhone{
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid #bec8c8;
+    display: flex;
+}
+.header__logoPhone > i {
+    color: #bec8c8;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+}
+.header__logoPhone > a{
+    color:#fff;
+    padding-left: 5px;
+}
+
+.header__nav > ul{
+    display: flex;
+    align-items: center;
+}
+
+.header__navItem{
+    display: block;
+    padding:15px;
+    transition: 0.3s all ease;
+}
+.header__navItem:hover{
+    color:#6fb048;
+    transform: scale(1.1);
+}
+.header__navItemActive{
+    color:#6fb048;
+}
+.header__navItemButton{
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 12px;
+    background-color: #bec8c8;
+    border-radius: 5px;
+
+}
+
+
+/***********************  Section-Features  ****************************/
+.section__features .section__child{
+    padding-top: 95px;
+    padding-bottom: 130px;
+    text-align: center;
+    min-height: auto;
+}
+.feature__cardMain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.feature__cardMain > div{
+    position: relative;
+    z-index: 1;
+    width: 300px;
+    height: 200px;
+
+}
+.feature__card{
+    /* visibility: hidden; */
+    width: 300px;
+    transition: 1s all ease;
+    position: absolute;
+    left: -100%;
+    opacity: 0;
+}
+.fadeFeatures{
+    /* visibility: visible; */
+    left: 0%;
+    opacity: 1;
+}
+.feature__card .h3__subTitle{
+    font-weight: bold;
+}
+.feature__listMain{
+    display: flex;
+    flex-direction: column;
+    margin-top: 170px;
+}
+.feature__listRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.feature__listRow:last-child{
+    margin-top: 65px;
+}
+.feature__listItem{
+    width: 45%;
+}
+.feature__listItem > div{
+    display: flex;
+    align-items: center;
+}
+.feature__listItem > div h3{
+    margin-top:0;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+
+
+/***********************  Section-Hand  ****************************/
+.section__hand{
+    background: url('../images/Rectangle 2.png') no-repeat;
+    background-size: cover;
+    z-index: 1;
+    overflow: hidden;
+}
+.section__hand .section__child{
+    text-align: center;
+    min-height: 665px;
+}
+.section__hand .section__child .p__descText{
+   font-weight: bold;
+}
+.section__hand .section__child::after{
+    content:'';
+    width: 508px;
+    height: 627px;
+    display: block;
+    background: url('../images/Hand.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 180px;
+    left: -75px;
+    z-index: 2;
+}
+.section__hand  .section__child::before{
+    content:'';
+    width: 179px;
+    height: 315px;
+    display: block;
+    background: url('../images/HandChild.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 230px;
+    left: 185px;
+    z-index: 3;
+}
+.section__hand .section__child .h3__subTitle{
+    font-size: 32px;
+    margin-top:50px;
+}
+.hand__desc{
+    position: absolute;
+    right: 30px;
+    bottom: 130px;
+    width: 500px;
+    text-align: left;
+}
+.hand__desc .p__descText{
+    font-weight: bold;
+}
+.hand__desc > ul{
+    margin-top:25px;
+}
+.hand__desc > ul .p__descText{
+    margin-top:0;
+    margin-left: 10px;
+}
+.hand__desc > ul li{
+    display: flex;
+    align-items: center;
+    margin-top:10px;
+}
+
+
+
+/***********************  Section-Face  ****************************/
+
+.section__face  .section__child{
+    min-height: 680px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.face__left{
+    width: 515px;
+}
+.face__right{
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    overflow: hidden;
+    background: url(../images/Face.png) no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+.face__left > h4{
+    font-size: 22px;
+    color:#83a7a5;
+    font-family: 'Merriweather', serif;
+    line-height: 1.7;
+}
+.face__left p{
+    color:#83a7a5;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+
+
+
+
+/***********************  Section-Map  ****************************/
+.section__map{
+    background: url('../images/Rectangle 2.png') no-repeat;
+    background-size: cover;
+    z-index: 1;
+    overflow: hidden;
+
+}
+.section__map .section__child::before{
+    content: '';
+    width: 735px;
+    height: 100%;
+    display: block;
+    background: url(../images/Map.png) no-repeat;
+    background-size: cover;
+    background-position: 0% 120%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+.section__map   .section__child{
+    min-height: 505px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.map__desc{
+    width: 515px;
+}
+.map__desc  .h3__subTitle{
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+
+/***********************  Section-Pricing & Plan  ****************************/
+/****  Price  ******/
+.section__pricing{
+    text-align: center;
+}
+.section__pricing .section__child{
+    margin-top:95px;
+}
+.section__pricing .section__child > .h3__subTitle{
+    font-size: 32px;
+    font-weight: lighter;
+}
+.section__pricing .section__child > .p__descText{
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+.price__cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.price__card{
+    width: 255px;
+    padding: 30px 0;
+    border: 1px solid #c1d3d1;
+    border-right:   none;
+
+}
+.price__card:last-child{
+    border-right: 1px solid #c1d3d1;
+}
+.price__card .h3__subTitle{
+    font-size: 15px;
+    color: #6fb048;
+    text-transform: uppercase;
+    margin-top: auto;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+.price__card h2{
+    color:  #0f5f5c;
+    font-size: 65px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 1;
+}
+.price_cardDedline{
+    color:  #0f5f5c;
+    font-weight: bold;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+.price__card .p__descText{
+    line-height: 1;
+}
+.price__cardSelectBtn{
+    margin-top:25px;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    cursor:pointer;
+    background-color:  #83a7a5;
+    position: relative;
+    z-index: 1;
+}
+.price__cardSelectBtn:before{
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #bec8c8;
+    visibility: hidden;
+    transition: 0.3s all ease;
+    z-index: -1;
+    border-radius: 5px;
+
+}
+.price__cardSelectBtn:hover:before{
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}
+.price__cardSelectBtnBest{
+    background-color:   #6fb048;
+}
+/****  Plan  ******/
+.plan__main{
+    margin-top:75px;
+}
+.plan__header{
+    margin-bottom: 25px;
+}
+.plan__header .h3__subTitle{
+    margin-top: 0;
+    font-weight: bold;
+}
+.plan__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.plan__list > ul > li{
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+.plan__list > ul > li .p__descText{
+    margin-top:0;
+    margin-left: 10px;
+}
+
+
+
+/***********************  Section-Help  ****************************/
+.section__help .section__child{
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 95px;
+    min-height: auto;
+}
+.section__help .section__child > .h3__subTitle{
+    font-size: 32px;
+    font-weight: lighter;
+    color: #6fb048;
+    margin-top:0;
+}
+.section__help .section__child > .p__descText{
+    margin-top: 10px;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+.section__help .section__child > h5{
+    font-size: 18px;
+    color: #0f5f5c;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+/***********************  Section-Download  ****************************/
+.section__download{
+    background: url("../images/Rectangle 4.png") no-repeat 50%;
+    background-size: cover;
+    z-index: 1;
+}
+.section__download::after{
+    content:'';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../images/Layer 10.png") no-repeat 50%;
+    background-size: cover;
+    z-index: 2;
+}
+.section__download .section__child{
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.download__left{
+    width: 600px;
+}
+.download__left .h3__subTitle{
+    font-size: 28px;
+    margin-top:0;
+}
+.download__left .p__descText{
+    font-size: 15px;
+    margin-top: 0;
+}
+.download__btn{
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    cursor:pointer;
+    background-color:  #6fb048;
+    position: relative;
+    z-index: 1;
+}
+.download__btn:before{
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #bec8c8;
+    opacity: 0;
+    transition: 0.3s all ease;
+    z-index: -1;
+    border-radius: 5px;
+}
+.download__btn:hover:before{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+
+
