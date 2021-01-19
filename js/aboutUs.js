@@ -16,19 +16,19 @@ window.addEventListener('load',()=>{
 
     let x = false;
     window.addEventListener('scroll',e => {
-            const cardsMainOffset = document.querySelector('.feature__cardMain').offsetHeight;
-            let scrollVal = window.pageYOffset;
-            if(scrollVal - cardsMainOffset > 150 && !x){
-                const cards = document.querySelectorAll('.feature__card');
-                for(let i = 0; i < cards.length ; i++){
-                    setTimeout(function(){
-                        cards[i].classList.add('fadeFeatures')
-                    },500*i)
-                }
-                x = true;
+        const cardsMainOffset = document.querySelector('.feature__cardMain').offsetHeight;
+        let scrollVal = window.pageYOffset;
+        if(scrollVal - cardsMainOffset > 150 && !x){
+            const cards = document.querySelectorAll('.feature__card');
+            for(let i = 0; i < cards.length ; i++){
+                setTimeout(function(){
+                    cards[i].classList.add('fadeFeatures')
+                },500*i)
             }
+            x = true;
+        }
     })
-    
+
     setTimeout(function(){
         fadeSectionTop()
     },500)

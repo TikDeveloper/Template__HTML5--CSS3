@@ -11,7 +11,7 @@ window.addEventListener('load',()=>{
     setTimeout(function(){
         hideLoader()
         enableScroll()
-    },1000)
+    },300)
 
 
 })
