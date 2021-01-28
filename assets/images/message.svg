@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M0 0L1024 0L1024 1024L0 1024Z" />
+		</clipPath>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp2">
+			<path d="M0 0L1024 0L1024 1024L0 1024L0 0Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #000000 } 
+	</style>
+	<g id="Page 1" clip-path="url(#cp1)">
+		<g id="Mask" clip-path="url(#cp2)">
+			<path id="Path 2" class="shp0" d="M896 768L896 283.6L633.8 483.2L770 638L766 642L608.2 502.8L512 576L415.8 502.8L258 642L254 638L390 483.2L128 284L128 768M879.4 256L144 256L512 535.8" />
+		</g>
+	</g>
+</svg>

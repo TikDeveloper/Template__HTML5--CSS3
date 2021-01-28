@@ -1,0 +1,220 @@
+@media  (min-width: 767px) and (max-width: 1024px){
+
+    /***********************  Section Global  ****************************/
+    .section__child{
+        width: 100%;
+    }
+    /***********************  Section-Top  ****************************/
+    .section__topChildCenter{
+        top: 250px;
+        padding-left: 20px;
+    }
+    header{
+        padding: 0 20px;
+    }
+    .header__navItem{
+        padding:10px;
+    }
+    /***********************  Section-Features  ****************************/
+    #svg__shape3{
+        left: 44.5%;
+    }
+    .feature__listRow{
+        justify-content: space-evenly;
+    }
+    /***********************  Section-Hand  ****************************/
+    .hand__desc{
+        width: 300px;
+        bottom: 100px;
+        right: 10px;
+    }
+    /***********************  Section-Face  ****************************/
+    .face__left{
+        width: 400px;
+        padding-left: 20px;
+    }
+    /***********************  Section-Map  ****************************/
+    .map__desc{
+        padding-left: 20px;
+    }
+    /***********************  Section-Pricing & Plan  ****************************/
+    .plan__list{
+        flex-direction: column;
+
+    }
+    .plan__list > ul{
+        margin-bottom: 15px;
+    }
+    /***********************  Section-Help  ****************************/
+
+    /***********************  Section-Download  ****************************/
+    .section__download .section__child{
+        padding:0 20px;
+    }
+    /***********************  Section-Footer  ****************************/
+    .section__footer .section__child{
+        padding:0 20px;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 767px){
+    /***********************  Burger  ****************************/
+    .mobileMenu{
+        display: block;
+    }
+    .header__navItemButton{
+        margin:0 auto;
+    }
+    /***********************  Section Global  ****************************/
+    .section__global{
+        padding: 0 15px;
+    }
+    .section__child{
+        width: 100%;
+    }
+    .p__descText{
+        word-break: break-all;
+    }
+    /***********************  Section-Top  ****************************/
+    .section__topChildCenter{
+        top: 250px;
+        text-align: center;
+        /*padding: 0 20px;*/
+        width: 280px;
+    }
+    .section__topChildCenter > h1{
+        font-size: 33px;
+    }
+    /*.header__logo{*/
+    /*    width: 100%;*/
+    /*    justify-content: space-between;*/
+    /*}*/
+    /*.header__logoPhone{*/
+    /*    margin-left: 0;*/
+    /*    padding-left: 0;*/
+    /*    border:none;*/
+    /*}*/
+    .header__nav{
+        display: none;
+    }
+    /*header{*/
+    /*    padding: 0 20px;*/
+    /*}*/
+    /***********************  Section-Features  ****************************/
+    .section__childTitle{
+        margin-top: 30px;
+    }
+    .section__childTitle > p{
+        font-size: 11px;
+    }
+    /*.section__features .section__child{*/
+    /*    padding: 0 20px;*/
+    /*}*/
+    .feature__cardMain{
+        flex-direction: column;
+    }
+    .feature__card{
+        margin-bottom: 20px;
+    }
+    #svg__shape2,#svg__shape3{
+        display: none;
+    }
+    .feature__listMain{
+        margin-top:100px;
+    }
+    .feature__listRow{
+        flex-direction: column;
+    }
+    .feature__listItem{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .feature__listItem > .p__descText{
+        margin-top: 10px;
+    }
+    .feature__listRow:last-child{
+        margin-top: 0;
+    }
+    /***********************  Section-Hand  ****************************/
+    .section__hand .section__child .h3__subTitle{
+        font-size:24px;
+    }
+    .hand__desc{
+        display: none;
+    }
+    /***********************  Section-Face  ****************************/
+    .section__face .section__child{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .face__left{
+        width: 100%;
+        text-align: center;
+    }
+    .face__right {
+        width: 300px;
+        height: 300px;
+    }
+/***********************  Section-Map  ****************************/
+    .section__map .section__child::before{
+        width: 100%;
+    }
+    .map__desc .h3__subTitle{
+        text-align: center;
+    }
+    /***********************  Section-Pricing & Plan  ****************************/
+    .price__cards{
+        flex-direction: column;
+    }
+    .price__card{
+        border-right: 1px solid #c1d3d1;
+        margin-bottom: 10px;
+    }
+    .plan__list{
+        flex-direction: column;
+        align-items: normal;
+    }
+    .plan__list > ul{
+        margin-bottom: 15px;
+    }
+    .plan__list > ul > li{
+        width: 100%;
+    }
+    /***********************  Section-Help  ****************************/
+
+    /***********************  Section-Download  ****************************/
+    .section__download .section__child{
+        justify-content: space-evenly;
+        flex-direction: column;
+        text-align: center;
+    }
+    .download__left{
+        width: 100%;
+    }
+    .download__left .h3__subTitle{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    /***********************  Section-Footer  ****************************/
+    .footer__top{
+        flex-direction: column;
+    }
+    .section__footerItem,.section__footerItem:first-child,.section__footerItem:last-child{
+        width: 100%;
+        text-align: center;
+    }
+    .section__footerItem .h3__subTitle{
+        justify-content: center;
+    }
+    .inp__email{
+        width: 90%;
+    }
+    .footer__bottom{
+        flex-direction: column-reverse;
+    }
+}
